@@ -438,6 +438,183 @@ function Minesweeper() {
   return new Task($win);
 }
 
+function Wolfenstein() {
+  var screenWidth = window.innerWidth;
+  var screenHeight = window.innerHeight;
+  var widthRatio = 0.9;
+  var heightRatio = 0.7;
+
+  var $win = make_iframe_window({
+    src: "programs/wolf3d/index.html",
+    icons: iconsAtTwoSizes("wolfenstein3d"),
+    title: "Wolfenstein 3D",
+    innerWidth: Math.min(680, screenWidth * widthRatio),
+    innerHeight: Math.min(421, screenHeight * heightRatio),
+    resizable: true,
+  });
+  return new Task($win);
+}
+
+function Quake() {
+  var screenWidth = window.innerWidth;
+  var screenHeight = window.innerHeight;
+  var widthRatio = 0.9;
+  var heightRatio = 0.7;
+
+  var $win = make_iframe_window({
+    src: "programs/quake/index.html",
+    icons: iconsAtTwoSizes("quake"),
+    title: "Quake",
+    innerWidth: Math.min(680, screenWidth * widthRatio),
+    innerHeight: Math.min(421, screenHeight * heightRatio),
+    resizable: true,
+  });
+  return new Task($win);
+}
+
+function about() {
+  var screenWidth = window.innerWidth;
+  var screenHeight = window.innerHeight;
+  var widthRatio = 0.9;
+  var heightRatio = 0.7;
+
+  var $win = make_iframe_window({
+    src: "programs/about/index.html",
+    icons: iconsAtTwoSizes("about"),
+    title: "About",
+    innerWidth: Math.min(680, screenWidth * widthRatio),
+    innerHeight: Math.min(421, screenHeight * heightRatio),
+    resizable: true,
+  });
+  return new Task($win);
+}
+
+function Persia() {
+  var screenWidth = window.innerWidth;
+  var screenHeight = window.innerHeight;
+  var widthRatio = 0.9;
+  var heightRatio = 0.7;
+
+  var $win = make_iframe_window({
+    src: "programs/persia/index.html",
+    icons: iconsAtTwoSizes("persia"),
+    title: "Prince of Persia",
+    innerWidth: Math.min(680, screenWidth * widthRatio),
+    innerHeight: Math.min(421, screenHeight * heightRatio),
+    resizable: true,
+  });
+  return new Task($win);
+}
+
+function gta() {
+  var screenWidth = window.innerWidth;
+  var screenHeight = window.innerHeight;
+  var widthRatio = 0.9;
+  var heightRatio = 0.7;
+
+  var $win = make_iframe_window({
+    src: "programs/gta/index.html",
+    icons: iconsAtTwoSizes("gta"),
+    title: "Grand Theft Auto",
+    innerWidth: Math.min(680, screenWidth * widthRatio),
+    innerHeight: Math.min(421, screenHeight * heightRatio),
+    resizable: true,
+  });
+  return new Task($win);
+}
+
+function doom() {
+  var screenWidth = window.innerWidth;
+  var screenHeight = window.innerHeight;
+  var widthRatio = 0.9;
+  var heightRatio = 0.7;
+
+  var $win = make_iframe_window({
+    src: "programs/doom/index.html",
+    icons: iconsAtTwoSizes("doom"),
+    title: "Doom",
+    innerWidth: Math.min(680, screenWidth * widthRatio),
+    innerHeight: Math.min(421, screenHeight * heightRatio),
+    resizable: true,
+  });
+  return new Task($win);
+}
+
+function duke() {
+  var screenWidth = window.innerWidth;
+  var screenHeight = window.innerHeight;
+  var widthRatio = 0.9;
+  var heightRatio = 0.7;
+
+  var $win = make_iframe_window({
+    src: "programs/dukenukem/index.html",
+    icons: iconsAtTwoSizes("duke"),
+    title: "Duke Nukem 3D",
+    innerWidth: Math.min(680, screenWidth * widthRatio),
+    innerHeight: Math.min(421, screenHeight * heightRatio),
+    resizable: true,
+  });
+  return new Task($win);
+}
+
+function nfs() {
+  var screenWidth = window.innerWidth;
+  var screenHeight = window.innerHeight;
+  var widthRatio = 0.9;
+  var heightRatio = 0.7;
+
+  var $win = make_iframe_window({
+    src: "programs/nfs/index.html",
+    icons: iconsAtTwoSizes("nfs"),
+    title: "Need For Speed 1994",
+    innerWidth: Math.min(680, screenWidth * widthRatio),
+    innerHeight: Math.min(421, screenHeight * heightRatio),
+    resizable: true,
+  });
+  return new Task($win);
+}
+
+function heroes2() {
+  var screenWidth = window.innerWidth;
+  var screenHeight = window.innerHeight;
+  var widthRatio = 0.9;
+  var heightRatio = 0.7;
+
+  var $win = make_iframe_window({
+    src: "programs/heroes2/index.html",
+    icons: iconsAtTwoSizes("gta"),
+    title: "Heroes II of Might and Magic",
+    innerWidth: Math.min(680, screenWidth * widthRatio),
+    innerHeight: Math.min(421, screenHeight * heightRatio),
+    resizable: true,
+  });
+  return new Task($win);
+}
+
+function Telegram() {
+  var win = window.open("https://example.com", "_blank");
+  win.focus();
+  return new Task(win);
+}
+
+function Twitter() {
+  var win = window.open("https://example.com", "_blank");
+  win.focus();
+  return new Task(win);
+}
+
+function Dextools() {
+  var win = window.open("https://example.com", "_blank");
+  win.focus();
+  return new Task(win);
+}
+
+function Arbiscan() {
+  var win = window.open("https://example.com", "_blank");
+  win.focus();
+  return new Task(win);
+}
+
 function SoundRecorder(file_path) {
   // TODO: DRY the default file names and title code (use document.title of the page in the iframe, in make_iframe_window)
   var document_title = file_path ? file_name_from_path(file_path) : "Sound";
@@ -625,16 +802,17 @@ function Calculator() {
   });
   return new Task($win);
 }
-
 function Pinball() {
+  var screenWidth = window.innerWidth;
+  var screenHeight = window.innerHeight;
+  var widthRatio = 0.9;
+  var heightRatio = 0.7;
   var $win = make_iframe_window({
     src: "programs/pinball/space-cadet.html",
     icons: iconsAtTwoSizes("pinball"),
     title: "3D Pinball for Windows - Space Cadet",
-    innerWidth: 600,
-    innerHeight: 416 + 20, // @TODO: where's this 20 coming from?
-    minInnerWidth: 600,
-    minInnerHeight: 416 + 20,
+    innerWidth: Math.min(680, screenWidth * widthRatio),
+    innerHeight: Math.min(421, screenHeight * heightRatio),
     // resizable: false, // @TODO (maybe) once gray maximized button is implemented
     override_alert: false, // to handle the alert as a fatal error, and to compensate for overzealous preventDefault()
   });
@@ -1278,15 +1456,6 @@ add_icon_not_via_filesystem({
   is_system_folder: true,
 });
 add_icon_not_via_filesystem({
-  title: "My Documents",
-  iconID: "my-documents-folder",
-  open: function () {
-    systemExecuteFile("/my-documents");
-  },
-  // file_path: "/my-documents/",
-  is_system_folder: true,
-});
-add_icon_not_via_filesystem({
   title: "Internet Explorer",
   iconID: "internet-explorer",
   open: function () {
@@ -1300,21 +1469,9 @@ add_icon_not_via_filesystem({
   shortcut: true,
 });
 add_icon_not_via_filesystem({
-  title: "Minesweeper",
-  iconID: "minesweeper",
-  open: Minesweeper,
-  shortcut: true,
-});
-add_icon_not_via_filesystem({
   title: "Sound Recorder",
   iconID: "speaker",
   open: SoundRecorder,
-  shortcut: true,
-});
-add_icon_not_via_filesystem({
-  title: "Solitaire",
-  iconID: "solitaire",
-  open: Solitaire,
   shortcut: true,
 });
 add_icon_not_via_filesystem({
@@ -1342,14 +1499,101 @@ add_icon_not_via_filesystem({
   shortcut: true,
 });
 add_icon_not_via_filesystem({
+  title: "Solitaire",
+  iconID: "solitaire",
+  open: Solitaire,
+  shortcut: true,
+});
+add_icon_not_via_filesystem({
+  title: "Minesweeper",
+  iconID: "minesweeper",
+  open: Minesweeper,
+  shortcut: true,
+});
+add_icon_not_via_filesystem({
+  title: "Wolfenstein 3D",
+  iconID: "wolfenstein3d",
+  open: Wolfenstein,
+  shortcut: true,
+});
+add_icon_not_via_filesystem({
+  title: "Prince of Persia",
+  iconID: "persia",
+  open: Persia,
+  shortcut: true,
+});
+add_icon_not_via_filesystem({
   title: "Pinball",
   iconID: "pinball",
   open: Pinball,
   shortcut: true,
 });
-
-folder_view.arrange_icons();
-
+add_icon_not_via_filesystem({
+  title: "Quake",
+  iconID: "quake",
+  open: Quake,
+  shortcut: true,
+});
+add_icon_not_via_filesystem({
+  title: "Grand Theft Auto",
+  iconID: "gta",
+  open: gta,
+  shortcut: true,
+});
+add_icon_not_via_filesystem({
+  title: "Doom",
+  iconID: "doom",
+  open: doom,
+  shortcut: true,
+});
+add_icon_not_via_filesystem({
+  title: "Duke Nukem 3D",
+  iconID: "duke",
+  open: duke,
+  shortcut: true,
+});
+add_icon_not_via_filesystem({
+  title: "Need For Speed",
+  iconID: "nfs",
+  open: nfs,
+  shortcut: true,
+});
+add_icon_not_via_filesystem({
+  title: "Heroes II",
+  iconID: "heroes2",
+  open: heroes2,
+  shortcut: true,
+});
+add_icon_not_via_filesystem({
+  title: "Arbiscan",
+  iconID: "arbiscan",
+  open: Arbiscan,
+  shortcut: false,
+});
+add_icon_not_via_filesystem({
+  title: "Twitter",
+  iconID: "twitter",
+  open: Twitter,
+  shortcut: false,
+});
+add_icon_not_via_filesystem({
+  title: "Telegram",
+  iconID: "telegram",
+  open: Telegram,
+  shortcut: false,
+});
+add_icon_not_via_filesystem({
+  title: "Dextools",
+  iconID: "dextools",
+  open: Dextools,
+  shortcut: false,
+});
+add_icon_not_via_filesystem({
+  title: "About",
+  iconID: "about",
+  open: about,
+  shortcut: true,
+});
 function iconsAtTwoSizes(iconID) {
   return {
     16: `images/icons/${iconID}-16x16.png`,

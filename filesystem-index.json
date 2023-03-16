@@ -20,7 +20,6 @@
   "browserconfig.xml": null,
   "classic.css": null,
   "desktop": {
-    "CREDITS.txt": null,
     "Themes": {
       "Ash.themepack": null,
       "Blue.themepack": null,
@@ -557,20 +556,6 @@
     }
   },
   "mstile-150x150.png": null,
-  "my-documents": {
-    "Dropbox.url": null,
-    "Google Docs.url": null
-  },
-  "my-pictures": {
-    "Dropbox.url": null,
-    "Flickr.url": null,
-    "Google Photos.url": null,
-    "Instagram.url": null
-  },
-  "network-neighborhood": {
-    "Windows 93.url": null,
-    "Windows 98 (Virtual x86).url": null
-  },
   "package-lock.json": null,
   "package.json": null,
   "programs": {

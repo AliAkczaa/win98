@@ -1,0 +1,231 @@
+<html>
+  <style>
+    * {
+      font-family: "VT323", sans-serif;
+    }
+
+    #os {
+      cursor: url("cursor/w98normal.cur"), default;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Window Contents */
+
+    #window {
+      position: fixed;
+      right: 55px;
+      top: 50px;
+      background-image: url("window.png");
+      width: 1000px;
+      height: 700px;
+    }
+
+    .windowTopBar {
+      color: white;
+      position: relative;
+      width: 100%;
+      height: 24px;
+    }
+
+    .windowbody {
+      position: relative;
+      top: -52px;
+    }
+
+    .windowTabRow {
+      width: 100%;
+      height: 18px;
+      border-radius: 25px;
+      border: 2px solid #420066;
+      padding: 5px;
+      position: relative;
+      top: 25px;
+    }
+
+    #windowTabContent {
+      position: relative;
+      top: 22px;
+      left: 25px;
+      width: 90%;
+      height: 500px;
+    }
+
+    .windowfooter {
+      position: relative;
+      bottom: -680px;
+      left: 15px;
+      right: 0px;
+      width: 95%;
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .changelog::-webkit-scrollbar {
+      display: none;
+    }
+
+    .changelog {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+      border-left: 3px solid blue;
+      background-color: white;
+      border-radius: 8px;
+      overflow-y: scroll;
+      position: relative;
+      width: 675px;
+      height: 450px;
+      padding: 5px;
+      position: relative;
+      top: -75px;
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .news::-webkit-scrollbar {
+      display: none;
+    }
+
+    .news {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+      border-left: 5px solid blue;
+      border-top: 1px solid blue;
+      border-right: 5px solid blue;
+      border-bottom: 1px solid blue;
+      border-radius: 8px;
+      overflow-y: scroll;
+      position: relative;
+      width: 100%;
+      height: 445px;
+      padding: 5px;
+    }
+
+    .windowSocails {
+      width: 100%;
+      height: 20px;
+      border-radius: 5px;
+      border: 3px solid #0070ff;
+      padding: 5px;
+      position: relative;
+      top: 10px;
+    }
+
+    .windowContactForm {
+      position: relative;
+      top: 10px;
+    }
+
+    /* Desktop Icons */
+
+    .deskicons1 {
+      position: fixed;
+      left: 30px;
+      top: 30px;
+    }
+    .deskicons2 {
+      position: fixed;
+      left: 120px;
+      top: 30px;
+    }
+
+    .deskicons3 {
+      position: fixed;
+      left: 220px;
+      top: 30px;
+    }
+
+    .deskbutton {
+      background-color: Transparent;
+      background-repeat: no-repeat;
+      border: none;
+      cursor: pointer;
+      overflow: hidden;
+      outline: none;
+      color: white;
+    }
+
+    .windowfooter {
+      position: relative;
+      bottom: -680px;
+      left: 15px;
+      right: 0px;
+      width: 95%;
+    }
+
+    /* Taskbar CSS */
+
+    .taskbar1 {
+      position: fixed;
+      bottom: 0;
+      left: 0px;
+      right: 0px;
+      width: 100%;
+      height: 30px;
+      background: rgb(85, 85, 85);
+    }
+    .taskbar2 {
+      position: fixed;
+      bottom: 2px;
+      left: 1px;
+      right: 1px;
+      width: 100%;
+      height: 26px;
+      background: rgb(194, 198, 202);
+    }
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Press%20Start%202P"
+  />
+  <script type="text/javascript" src="mainStuff.js"></script>
+  <div class="windowbody">
+    <div class="windowfooter">
+      <hr />
+      <center>(C) 2023 TOKEN || All Rights Reserved.</center>
+    </div>
+    <div class="windowTabRow">
+      <button
+        type="button"
+        class="deskbutton"
+        onclick="windowHome()"
+        style="cursor: url('cursor/w98hand.cur'), pointer"
+      >
+        <img
+          src="win98png/computer-4.png"
+          width="16px"
+          height="16px"
+        />&nbsp;&nbsp;<font
+          color="#00000"
+          size="4"
+          style="position: relative; bottom: 3px"
+          >Home Page</font
+        >
+      </button>
+      <button
+        type="button"
+        class="deskbutton"
+        onclick="windowAboutMe()"
+        style="cursor: url('cursor/w98hand.cur'), pointer"
+      >
+        <img
+          src="win98png/notepad_file-2.png"
+          width="16px"
+          height="16px"
+        />&nbsp;&nbsp;<font
+          color="#00000"
+          size="4"
+          style="position: relative; bottom: 3px"
+          >Tokenomics</font
+        >
+      </button>
+    </div>
+    <div id="windowTabContent">
+      <script>
+        windowHome();
+      </script>
+    </div>
+    <script>
+      dragElement(document.getElementById("window"));
+    </script>
+  </div>
+</html>

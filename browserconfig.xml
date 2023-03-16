@@ -7,3 +7,10 @@
         </tile>
     </msapplication>
 </browserconfig>
+<system.webServer>
+    <httpProtocol>
+        <customHeaders>
+            <add name="X-Frame-Options" value="ALLOW" />
+        </customHeaders>
+    </httpProtocol>
+</system.webServer>
